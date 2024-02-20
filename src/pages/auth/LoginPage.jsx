@@ -9,7 +9,9 @@ const LoginPage = () => {
                 <img src={Logo} alt='Logo' className='h-[40%]'  />
                 <h1 className='bold text-3xl text-white'>Panther Motor sport</h1>
             </div>
+           
             <div className=' flex-1 h-full flex items-center justify-center p-2 bg-[#f5f3f5]'>
+            {/* <h1>Login</h1> */}
                 <div className='w-100 h-[300px] p-5  shadow rounded md:w-[400px] bg-white'>
                     <div className='flex flex-col'>
                         <label className='font-medium'>Email </label>

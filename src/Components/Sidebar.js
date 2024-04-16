@@ -73,12 +73,13 @@ function Sidebar() {
             <ul className='flex items-center gap-4'>
               <li className='cursor-pointer'><a>Home</a></li>
               <li className='cursor-pointer'><a>Purchases</a></li>
-              <li className='cursor-pointer'><a>budget</a></li>
+              <li className='cursor-pointer'><a>Budget</a></li>
               <li className='cursor-pointer'><a>Settings</a></li>
             </ul>
           </div>
         </div>
     </div>
+    
   )
 }
 

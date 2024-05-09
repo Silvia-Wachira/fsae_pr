@@ -3,9 +3,9 @@ import React from 'react'
 const Button = () => {
   return (
     <>
-    <div>
-        <h1>SHOP</h1>
-    </div>
+    {/* <div>
+        <h1 className='rounded'>SHOP</h1>
+    </div> */}
 
     </>
   )

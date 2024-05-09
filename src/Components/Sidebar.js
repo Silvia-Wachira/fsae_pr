@@ -64,9 +64,9 @@ function Sidebar() {
        </div>
 
        {/* Navbar */}
-       <div className=' absolute top-0 left-0 right-0 w-100  bg-purple-900 text-white hidden lg:flex h-[50px] items-center justify-between px-4'>
+       <div className=' absolute top-0 left-0 right-0 w-100  bg-purple-900 text-white hidden lg:flex h-[100px] items-center justify-between px-4'>
           <div className='flex items-center gap-4'>
-            <img src={Logo} alt='Logo' className='w-[50px]'/>
+            <img src={Logo} alt='Logo' className='w-[70px]'/>
             <h1>Title</h1>
           </div>
           <div>

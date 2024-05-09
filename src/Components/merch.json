@@ -1,0 +1,53 @@
+  
+    {
+        
+        "meals":[
+            {
+                "title":"breakfast",
+                "id":"1",
+                "recommendations": [
+                    "eggs, toast & tea",
+                    "bacon, coffee & yams",
+                    "bread, ham & juice",
+                    "coffee",
+                    "pancakes, milk & apple",
+                    "cereal & banana",
+                    "sandwich, yoghurt & biscuits",
+                    "avocado toast & milk",
+                    "porridge & boiled maize",
+                    "sweet potatoes",
+                    "arrow roots & tea",
+                    "yams,banana & fresh juice",
+                    "sausages, viazi karai & & tea"
+                    ]
+            },
+            {
+
+                "title":"lunch",
+                "id":"2",
+                "recommendations": [
+                    "rice & beans",
+                    "chapati & chicken",
+                    "ugali & omena",
+                    "pumpkin,rice & dessert",
+                    "rice & beef",
+                    "fries,juice & banana",
+                    "soup"
+                ]
+            },
+            {
+
+                "title":"dinner",
+                "id":"3",
+                "recommendations": [
+                    "fasting",
+                    "tofu",
+                    "Kenyan pilau",
+                    "Kenyan goat meat stew",
+                    "Spaghetti & minced meat",
+                    "githeri",
+                    "Kenyan mukimo"
+                ]
+        }
+    ]
+    }

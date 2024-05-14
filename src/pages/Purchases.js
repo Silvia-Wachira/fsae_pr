@@ -1,20 +1,16 @@
 import React from 'react'
 
-const Purchases = () => {
+const Purchases = (props) => {
   return (
-    <>
-        <dialog open className='shadow py-3 px-3 items-center'>
-           {/* <p>Greetings, one and all!</p> */}
-           <form method="dialog">
-            <img></img>
-            <p>I'm a product</p>
-            <p>$15.00</p>
-             <button className=''>Add To Cart</button>
-           </form>
-        </dialog>
-    </>
+    <div className='flex'>
+      <span>{props.title}</span>
+      <img className='overflow-auto' src={`../assets/image/${props.img}`}/>
+      <p>{props.description}</p>
+      <p><span>From ${props.price}</span></p>    
+    </div>
   
   )
 }
 
 export default Purchases
+

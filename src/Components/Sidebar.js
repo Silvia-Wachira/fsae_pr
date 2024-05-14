@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { AiOutlineMenu } from "react-icons/ai";
 import { MdOutlineClose } from "react-icons/md";
 import { AiOutlineHome } from "react-icons/ai";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaSackDollar } from "react-icons/fa6";
 import { MdOutlineSettings } from "react-icons/md";
-import  Logo  from "../assets/logo/pantherlogo.png"
+import Logo from "../assets/logo/pantherlogo.png"
+// import {Link} from "react-router-dom"
 
 
 function Sidebar() {
@@ -55,10 +56,10 @@ function Sidebar() {
           </div>
           <div>
               <ul>
-                  <li className='flex items-center gap-2 cursor-pointer my-2'> <AiOutlineHome /> <a>Home</a></li>
-                  <li className='flex items-center gap-2 cursor-pointer my-2'> < MdOutlineShoppingCart /> <a>Purchases</a></li>
-                  <li className='flex items-center gap-2 cursor-pointer my-2'> <FaSackDollar /> <a>Budget</a></li>
-                  <li className='flex items-center gap-2 cursor-pointer my-2'> <MdOutlineSettings /> <a>Settings</a></li>
+                  <li className='flex items-center gap-2 cursor-pointer my-2' ><AiOutlineHome /><a routerLink="/"><Link to="/">Home</Link></a></li>
+                  <li className='flex items-center gap-2 cursor-pointer my-2' >< MdOutlineShoppingCart /><a routerLink="/purchases"><Link to="/purchases"></Link>Purchases</a></li>
+                  <li className='flex items-center gap-2 cursor-pointer my-2' ><FaSackDollar /> <a>Budget</a></li>
+                  <li className='flex items-center gap-2 cursor-pointer my-2' ><MdOutlineSettings /> <a>Settings</a></li>
               </ul>
           </div>
        </div>
@@ -71,10 +72,10 @@ function Sidebar() {
           </div>
           <div>
             <ul className='flex items-center gap-4'>
-              <li className='cursor-pointer'><a>Home</a></li>
-              <li className='cursor-pointer'><a>Purchases</a></li>
-              <li className='cursor-pointer'><a>Budget</a></li>
-              <li className='cursor-pointer'><a>Settings</a></li>
+              <li className='cursor-pointer'routerLink="/"><Link to="/">Home</Link></li>
+              <li className='cursor-pointer' routerLink="/purchases"><Link to="purchases">Purchases</Link></li>
+              <li className='cursor-pointer' routerLink="/budget"><Link to="budget">Budget</Link></li>
+              <li className='cursor-pointer' routerLink="/settings"><Link to="settings">Settings</Link></li>
             </ul>
           </div>
         </div>

@@ -8,17 +8,7 @@ import Purchases from './pages/Purchases.js';
 import data from './data.json'
 
 function App() {
-  const cards = data.merchandise.map((item)=> {
-    return (
-      <Purchases 
-        key={item.id}
-        img={item.coverImg}
-        title={item.title}
-        description={item.description}
-        price={item.price}
-      />
-    )
-  })
+
   return (
     <div>
     <BrowserRouter>
@@ -31,9 +21,9 @@ function App() {
         <Route path = "/purchases" element = {<Purchases />}/>
       </Routes>
     </BrowserRouter>
-    <section>
-      {cards}
-    </section>
+    {/* <section> */}
+      {/* {cards} */}
+    {/* </section> */}
 
     </div>
   );

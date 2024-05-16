@@ -6,7 +6,7 @@ import Purchase from '../Components/Purchase'
 const Purchases = (props) => {
 
     return (
-      <div className='grid grid-cols-3 gap-4 lg:pt-[100px] lg:px-[200px]'>{
+      <div className='grid grid-cols-3 gap-6 lg:pt-[150px] lg:px-[200px]'>{
         data.merchandise.map((item)=> {
         return <Purchase 
         key={item.id}

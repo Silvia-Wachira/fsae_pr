@@ -5,7 +5,7 @@
             "title": "bag",
             "description":"IPure leather bag",
             "price": 13600,
-            "coverImg": "src/assets/images/bag.jpg",
+            "coverImg": "./assets/img/bag.jpg",
             "stats": {
                 "rating": 5.0,
                 "reviewCount": 6

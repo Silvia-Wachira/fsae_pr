@@ -3,9 +3,9 @@
         {
             "id": 1,
             "title": "bag",
-            "description":"IPure leather bag",
+            "description":"Pure leather bag",
             "price": 13600,
-            "coverImg": "./assets/img/bag.jpg",
+            "coverImg": "bag.jpg",
             "stats": {
                 "rating": 5.0,
                 "reviewCount": 6
@@ -17,7 +17,7 @@
             "title": "LBasketball",
             "description":"High quality basketball",
             "price": 6400,
-            "coverImg": "./assets/img/basketball.jpg",
+            "coverImg": "basketball.jpg",
             "stats": {
                 "rating": 5.0,
                 "reviewCount": 6
@@ -29,7 +29,7 @@
             "title": "Headphones1",
             "description":"Quality beats by Sly.",
             "price": 7900,
-            "coverImg": "./assets/img/headphones1.jpg",
+            "coverImg": "headphones1.jpg",
             "stats": {
                 "rating": 5.0,
                 "reviewCount": 6
@@ -41,7 +41,7 @@
             "title": "Headphones2",
             "description":"Best selling Beats by Sly",
             "price": 12900,
-            "coverImg": "./assets/img/headphones2.jpg",
+            "coverImg": "headphones2.jpg",
             "stats": {
                 "rating": 5.0,
                 "reviewCount": 6
@@ -53,7 +53,7 @@
             "title": "Jersey",
             "description":"Jerseys available in blue, green and black",
             "price": 15800,
-            "coverImg": "./assets/img/jersey.jpg",
+            "coverImg": "jersey.jpg",
             "stats": {
                 "rating": 5.0,
                 "reviewCount": 6
@@ -65,7 +65,7 @@
             "title": "Shoes1",
             "description":"Jordans 6th edition",
             "price": 15790,
-            "coverImg": "./assets/img/shoes1.jpg",
+            "coverImg": "shoes1.jpg",
             "stats": {
                 "rating": 5.0,
                 "reviewCount": 6
@@ -77,7 +77,7 @@
             "title": "Shoes2",
             "description":"Freak X Puma",
             "price": 8999,
-            "coverImg": "./assets/img/shoes2.jpg",
+            "coverImg": "shoes2.jpg",
             "stats": {
                 "rating": 5.0,
                 "reviewCount": 6
@@ -87,9 +87,9 @@
         {
             "id": 8,
             "title": "Sweatpants",
-            "description":"Available in xxl, xl, x,m,l,xl,xxl,xxxl,xxxxl",
+            "description":"Available in large, medium and small",
             "price": 6100,
-            "coverImg": "./assets/img/sweatpants.jpg",
+            "coverImg": "sweatpants.jpg",
             "stats": {
                 "rating": 5.0,
                 "reviewCount": 6
@@ -101,7 +101,7 @@
             "title": "Slides1",
             "description":"Available in black, brown and white.",
             "price": 34500,
-            "coverImg": "./assets/img/slides1.jpg",
+            "coverImg": "slides1.jpg",
             "stats": {
                 "rating": 5.0,
                 "reviewCount": 6
@@ -113,7 +113,7 @@
             "title": "Slides2",
             "description":"Quality slides",
             "price": 9999,
-            "coverImg": "./assets/img/slides2.jpg",
+            "coverImg": "slides2.jpg",
             "stats": {
                 "rating": 5.0,
                 "reviewCount": 6
@@ -125,7 +125,7 @@
             "title": "Waterbottle",
             "description":"Quality water bottles",
             "price": 5000,
-            "coverImg": "./assets/img/waterbottle1.jpg",
+            "coverImg": "waterbottle1.jpg",
             "stats": {
                 "rating": 5.0,
                 "reviewCount": 6
@@ -138,7 +138,7 @@
             "title": "Water bottle",
             "description":"1ltr, and 2ltr available",
             "price": 97650,
-            "coverImg": "./assets/img/waterbottle2.jpg",
+            "coverImg": "waterbottle2.jpg",
             "stats": {
                 "rating": 5.0,
                 "reviewCount": 6

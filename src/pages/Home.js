@@ -5,13 +5,12 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
 	   return(
-		<div className="bg-cover bg-center"> 
-			
+		<div className=" bg-cover bg-center"> 
 			  <div className="">
-			  {/* <a href="/purchases" class="button">SHOP</a>
-			  	<a routerLink="/purchases"><Link to="purchases">SHOP</Link></a> */}
-			  	<img src={Img} alt='Img' className='' />
-				
+			  	<img src={Img} alt='Img'  />
+				<a href="/purchases" >
+					<button>SHOP</button>
+				</a>
 			  </div>
 		</div>
 	   )

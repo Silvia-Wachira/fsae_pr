@@ -13,9 +13,12 @@ import Logo from "../assets/logo/pantherlogo.png"
 function Sidebar() {
   const [isShowingSidebar, setIsShowingSidebar] = useState(true)
 
-  function toggleSidebar(){
-    setIsShowingSidebar(!isShowingSidebar)
-  }
+  // function toggleSidebar(){
+  //   setIsShowingSidebar(!isShowingSidebar)
+  //   console.log(isShowingSidebar)
+  // }
+
+  const toggleSidebar = () => setIsShowingSidebar(!isShowingSidebar) 
 
   return (
     <div className="flex relative" >
@@ -31,7 +34,7 @@ function Sidebar() {
        </div>
           <div>
               <ul onClick={toggleSidebar} className='list-none'>
-                  <li className=' my-5 gap-2 cursor-pointer'> <AiOutlineHome /> </li>
+                  <li className=' my-5 gap-2 cursor-pointer'> <AiOutlineHome /> <Link to="/"></Link></li>
                   <li className=' my-5 gap-2 cursor-pointer'> < MdOutlineShoppingCart /></li>
                   <li className=' my-5 gap-2 cursor-pointer'> <FaSackDollar /></li>
                   <li className=' my-5 gap-2 cursor-pointer'> <MdOutlineSettings /></li>
@@ -56,10 +59,10 @@ function Sidebar() {
           </div>
           <div>
               <ul>
-                  <li className='flex items-center gap-2 cursor-pointer my-2' ><AiOutlineHome /><a routerLink="/"><Link to="/">Home</Link></a></li>
-                  <li className='flex items-center gap-2 cursor-pointer my-2' >< MdOutlineShoppingCart /><a routerLink="/purchases"><Link to="/purchases"></Link>Purchases</a></li>
-                  <li className='flex items-center gap-2 cursor-pointer my-2' ><FaSackDollar /> <a>Budget</a></li>
-                  <li className='flex items-center gap-2 cursor-pointer my-2' ><MdOutlineSettings /> <a>Settings</a></li>
+                  <li className='flex items-center gap-2 cursor-pointer my-2' ><AiOutlineHome /><Link to="/">Home</Link></li>
+                  <li className='flex items-center gap-2 cursor-pointer my-2' >< MdOutlineShoppingCart /><Link to="purchases">Purchases</Link></li>
+                  <li className='flex items-center gap-2 cursor-pointer my-2' ><FaSackDollar /><Link to="budget">Budget</Link></li>
+                  <li className='flex items-center gap-2 cursor-pointer my-2' ><MdOutlineSettings /><Link to="settings">Settings</Link></li>
               </ul>
           </div>
        </div>
@@ -72,10 +75,10 @@ function Sidebar() {
           </div>
           <div>
             <ul className='flex items-center gap-4'>
-              <li className='cursor-pointer'routerLink="/"><Link to="/">Home</Link></li>
-              <li className='cursor-pointer' routerLink="/purchases"><Link to="purchases">Purchases</Link></li>
-              <li className='cursor-pointer' routerLink="/budget"><Link to="budget">Budget</Link></li>
-              <li className='cursor-pointer' routerLink="/settings"><Link to="settings">Settings</Link></li>
+              <li className='cursor-pointer' ><Link to="/">Home</Link></li>
+              <li className='cursor-pointer' ><Link to="purchases">Purchases</Link></li>
+              <li className='cursor-pointer' ><Link to="budget">Budget</Link></li>
+              <li className='cursor-pointer' ><Link to="settings">Settings</Link></li>
             </ul>
           </div>
         </div>

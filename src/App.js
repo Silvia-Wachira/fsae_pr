@@ -10,16 +10,20 @@ import data from './data.json'
 function App() {
 
   return (
-    <div>
+    <div className='w-[100vw] flex justify-between'>
     <BrowserRouter>
-      <Sidebar />
-      <Routes>
-        <Route path = "/" exact element ={<Home/>}/>
-        <Route path = "/login" element ={<LoginPage/>}/>
-        <Route path = "/register" element ={<RegisterPage/>}/>
-        <Route path = "/home" element = {<Home/>} />
-        <Route path = "/purchases" element = {<Purchases />}/>
-      </Routes>
+      {/* <div className='w-auto md:w-[100]'> */}
+        <Sidebar />
+      {/* </div> */}
+      {/* <div className='w-full flex justify-center'> */}
+        <Routes>
+          <Route path = "/" exact element ={<Home/>}/>
+          <Route path = "/login" element ={<LoginPage/>}/>
+          <Route path = "/register" element ={<RegisterPage/>}/>
+          <Route path = "/home" element = {<Home/>} />
+          <Route path = "/purchases" element = {<Purchases />}/>
+        </Routes>
+      {/* </div> */}
     </BrowserRouter>
     {/* <section> */}
       {/* {cards} */}

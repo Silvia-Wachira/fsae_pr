@@ -9,19 +9,13 @@ import { MdOutlineSettings } from "react-icons/md";
 import Logo from "../assets/logo/pantherlogo.png"
 // import {Link} from "react-router-dom"
 
-
 function Sidebar() {
   const [isShowingSidebar, setIsShowingSidebar] = useState(true)
-
-  // function toggleSidebar(){
-  //   setIsShowingSidebar(!isShowingSidebar)
-  //   console.log(isShowingSidebar)
-  // }
-
+  
   const toggleSidebar = () => setIsShowingSidebar(!isShowingSidebar) 
 
   return (
-    <div className="flex relative" >
+    <div className="flex relative z-[1000]" >
       {/* minisidebar */}
       <div className={isShowingSidebar ? "hidden" : 'absolute flex flex-col items-center top-0 bottom-0 left-0 h-screen bg-purple-900 text-[#ffff] w-[50px] lg:hidden px-2 pt-4'}>
       <div>
@@ -66,9 +60,8 @@ function Sidebar() {
               </ul>
           </div>
        </div>
-
-       {/* Navbar */}
-       <div className=' absolute top-0 left-0 right-0 w-100  bg-purple-900 text-white hidden lg:flex h-[100px] items-center justify-between px-4'>
+      {/* Navbar */}
+       <div className=' absolute top-0 left-0 right-0 w-100 bg-purple-900 text-white hidden lg:flex lg:fixed top-0 left-0 right-0 lg:px-[50px] h-[100px] w-[100vw] items-center justify-between px-4'>
           <div className='flex items-center gap-4'>
             <img src={Logo} alt='Logo' className='w-[70px]'/>
             <h1>Title</h1>

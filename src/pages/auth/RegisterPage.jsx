@@ -50,7 +50,7 @@ const RegisterPage = () => {
       
         <div className='flex h-screen '>
             <div className='h-full  flex-1 hidden p-5 lg:flex flex-col items-center justify-center bg-purple-900'>
-                <img src={Logo} alt='Logo' className='h-[40%]'  />
+                <img src={Logo} alt='Logo' className='h-[110%]'  />
                 <h1 className='bold text-3xl text-white'>Panther Motor sport</h1>
             </div>
            

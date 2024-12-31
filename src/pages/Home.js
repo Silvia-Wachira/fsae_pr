@@ -1,6 +1,7 @@
 import React from "react";
 // import Button from "../Components/Button";
 import Img from "../assets/bball.jpg"
+// import Img from "../assets/boxer.jpg"
 // import { Link } from "react-router-dom";
 
 const Home = () => {

@@ -5,23 +5,25 @@ import Sidebar from './Components/Sidebar.js';
 import LoginPage from './pages/auth/LoginPage.jsx';
 import RegisterPage from './pages/auth/RegisterPage.jsx';
 import Purchases from './pages/Purchases.js';
+import Settings from './Components/Settings.js';
 import data from './data.json'
 
 function App() {
 
   return (
-    <div className='w-[100vw] flex justify-between'>
+    <div className='w-full h-screen flex justify-between'>
     <BrowserRouter>
       {/* <div className='w-auto md:w-[100]'> */}
         <Sidebar />
       {/* </div> */}
       {/* <div className='w-full flex justify-center'> */}
         <Routes>
-          <Route path = "/" exact element ={<Home/>}/>
+          <Route path = "/" element ={<Home/>}/>
           <Route path = "/login" element ={<LoginPage/>}/>
           <Route path = "/register" element ={<RegisterPage/>}/>
           <Route path = "/home" element = {<Home/>} />
           <Route path = "/purchases" element = {<Purchases />}/>
+          <Route path="/settings" element={<Settings />} />
         </Routes>
       {/* </div> */}
     </BrowserRouter>

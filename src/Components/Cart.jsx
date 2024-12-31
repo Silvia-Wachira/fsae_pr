@@ -62,7 +62,7 @@ const Cart = (props) => {
     }
 
   return (
-    <div className={open ? "z-50 absolute right-0 top-0 bottom-0 w-[350px] bg-white shadow-sm h-screen" : "absolute top-0 bottom-0 right-[-550px]"}>
+    <div style={cartStyles} className={open ? "z-50 absolute right-0 top-0 bottom-0 w-[350px] bg-white shadow-sm h-screen" : "absolute top-[100px] bottom-0 right-[-550px]"}>
       <div className='h-[100px] flex p-2 bg-black'>
         <div className='h-full flex items-center'>
           <FaAngleRight onClick={closeCart} className='text-white text-xl cursor-pointer' />

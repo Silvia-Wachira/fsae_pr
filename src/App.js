@@ -6,7 +6,10 @@ import LoginPage from './pages/auth/LoginPage.jsx';
 import RegisterPage from './pages/auth/RegisterPage.jsx';
 import Purchases from './pages/Purchases.js';
 import Settings from './Components/Settings.js';
+import Budget from './Components/Budget.jsx';
+import NotFoundPage from './pages/NotFoundPage.jsx';
 import data from './data.json'
+
 
 function App() {
 
@@ -24,6 +27,10 @@ function App() {
           <Route path = "/home" element = {<Home/>} />
           <Route path = "/purchases" element = {<Purchases />}/>
           <Route path="/settings" element={<Settings />} />
+          <Route path="/budget" element={<Budget />} />
+          <Route path="*" element={<NotFoundPage />} />
+
+
         </Routes>
       {/* </div> */}
     </BrowserRouter>

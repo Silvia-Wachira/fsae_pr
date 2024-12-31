@@ -3,55 +3,55 @@ import { Link } from 'react-router-dom'
 import Modal from 'react-modal';
 
 const Purchase = (props) => {
-  // const [modalIsOpen, setIsOpen] = React.useState(false);
-  // const [counter, setCounter] = useState(1)
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+  const [counter, setCounter] = useState(1)
 
-// const customStyles = {
-//   content: {
-//     top: '50%',
-//     left: '50%',
-//     right: 'auto',
-//     bottom: 'auto',
-//     marginRight: '-50%',
-//     transform: 'translate(-50%, -50%)',
-//     height: '500px;',
-//     width: '600px',
-//     border: '1px solid blue',
-//     boxShadow:'-6px 4px 10px -2px rgba(103,16,112,0.58);',
-//     backdropFilter: 'blur(5px)'
-//   },
-// };
+const customStyles = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+    height: '500px;',
+    width: '600px',
+    border: '1px solid blue',
+    boxShadow:'-6px 4px 10px -2px rgba(103,16,112,0.58);',
+    backdropFilter: 'blur(5px)'
+  },
+};
  
   function openModal() {
-    // setIsOpen(true);
+    setIsOpen(true);
   }
 
-  // function afterOpenModal() {
-  //   // references are now sync'd and can be accessed.
-  //   // subtitle.style.color = '#f00';
-  // }
+  function afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    // subtitle.style.color = '#f00';
+  }
 
-  // function closeModal() {
-  //   setIsOpen(false);
-  // }
+  function closeModal() {
+    setIsOpen(false);
+  }
 
   // const closeModal = () => {
   //     setIsOpen(false)
   // }
 
-  // const addToCart = () => {
-  //   props.setSharedData({
-  //     title:"trial",
-  //     description:"Testing only"
-  //   })
-  //     setIsOpen(false)
-  //   props.setOpenCart(true)
-  // }
+  const addToCart = () => {
+    props.setSharedData({
+      title:"trial",
+      description:"Testing only"
+    })
+      setIsOpen(false)
+    props.setOpenCart(true)
+  }
 
-  // const handleIncrease = () => setCounter(prevCount => prevCount + 1)
-  // const handleDecrease = () => {
-  //   setCounter(prevCount => prevCount > 1 ? prevCount - 1 : 1)
-  // }
+  const handleIncrease = () => setCounter(prevCount => prevCount + 1)
+  const handleDecrease = () => {
+    setCounter(prevCount => prevCount > 1 ? prevCount - 1 : 1)
+  }
   
   return (
     <div className='hover:scale-105 py-4 px-4 text-center border border-grey-200 h-[600px] transition ease-in-out delay-1 shadow-md bg-white'>
@@ -65,7 +65,7 @@ const Purchase = (props) => {
                Add to Cart
               </button>  
         </div>
-        {/* <Modal
+        <Modal
             isOpen={modalIsOpen}
             onAfterOpen={afterOpenModal}
             onRequestClose={closeModal}
@@ -107,7 +107,7 @@ const Purchase = (props) => {
               </div>
             </div>
             
-          </Modal> */}
+          </Modal>
     </div>
   )
 }

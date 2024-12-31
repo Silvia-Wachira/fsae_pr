@@ -1,10 +1,7 @@
 import React, { useState } from 'react'
 import data from '../data.json'
 import Purchase from '../Components/Purchase'
-import { MdOutlineClose } from "react-icons/md";
-import { GiHidden } from 'react-icons/gi';
 import Cart from '../Components/Cart'
-// import Modal from '../Components/Modal';
 import Dialog from '../Components/Dialog.jsx';
 
 const Purchases = (props) => {
@@ -28,7 +25,7 @@ const Purchases = (props) => {
                   />
                 })}
             </div>
-            <Cart className='absolute top-0 bottom-0 right-0'
+            <Cart className='fixed top-0 bottom-0 right-0'
               sharedData={sharedData}
               openCart={openCart}
             />
